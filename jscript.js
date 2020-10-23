@@ -25,10 +25,11 @@ const imgPath = vase._embedded["wp:featuredmedia"][0].media_details.sizes.full.s
     const vaseCopy = template.cloneNode(true);
 
     // 3. cloning the data 
-    vaseCopy.querySelector(".title").innerHTML = vase.artist
-    vaseCopy.querySelector(".title").innerHTML = vase.artist
+    vaseCopy.querySelector(".artist").innerHTML = vase.artist
+    vaseCopy.querySelector(".vaseName").innerHTML = vase.vase_name
+    vaseCopy.querySelector(".vaseMaterial").innerHTML = vase.material
     vaseCopy.querySelector(".desc").innerText   = vase.description
-    vaseCopy.querySelector(".vase-size").innerText   = vase.size
+    vaseCopy.querySelector(".vaseSize").innerText   = vase.size
 
    const img = vaseCopy.querySelector("img");
 	img.setAttribute("src", imgPath);
