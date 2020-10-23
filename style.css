@@ -3,30 +3,50 @@
   padding: 0;
   margin: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-:root{
---nav-fonts:Indie Flower;
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 150px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+:root {
+  --nav-fonts: Indie Flower;
 }
 
 .logo {
   width: 10rem;
   margin-top: 12%;
   margin-left: 8%;
-
 }
 
 .logobanner {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;  
+  width: 50%;
   margin-top: 8%;
 }
 
 ul li {
   color: black;
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   text-decoration: none;
   text-transform: capitalize;
   padding: 10px 30px;
@@ -36,22 +56,12 @@ ul li {
   margin-right: 2rem;
 }
 
-li a{
+li a {
   text-decoration: none;
-  font-family:  Indie Flower;
+  font-family: Indie Flower;
   font-size: 24px;
- color: black;
+  color: black;
 }
-
-/* .metteM {
-  text-align: center;
-  color: white;
-  font-size: 80px;
-  margin: 0;
-  font-family: 'Baskerville', serif;
-  line-height: 1em;
-  z-index: 1000;
-} */
 
 .banner {
   display: table-cell;
@@ -60,17 +70,16 @@ li a{
   text-align: center;
 }
 
-div{
+div {
   display: flex;
 }
-.homemenu{
+.homemenu {
   display: flex;
   margin-top: auto;
 }
-header{
+header {
   display: flex;
   justify-content: space-between;
-
 }
 
 .scrollsign {
@@ -80,19 +89,8 @@ header{
   top: 50%;
   margin: 40px;
   color: black;
-  font-family:Indie Flower ;
+  font-family: Indie Flower;
 }
-
-/*.footer {
-  position: fixed;
-  left: 0;
-  bottom 0;
-  width 100%;
-  background-color: white;
-  color: black;
-  text-align: center;
-  margin-top: 12%;
-}*/
 
 footer {
   position: fixed;
@@ -109,9 +107,6 @@ footer {
   font: bold 16ps sans-serif;
   padding: 55px 50 px;
   margin-top: 80px;
-  display: flex;
-
-
 }
 
 .footer-dist .footer-left,
@@ -121,17 +116,17 @@ footer {
   vertical-align: top;
 }
 
-.footer-left{
+.footer-left {
   margin-left: 3%;
 }
 
-.footer-dist .footer-left{
+.footer-dist .footer-left {
   width: 40%;
 }
 
-.footer-dist h3{
+.footer-dist h3 {
   color: black;
-  font: normal 22px 'Indie Flower';
+  font: normal 22px "Indie Flower";
   margin-top: 0;
 }
 
@@ -139,20 +134,21 @@ footer {
   color: black;
 }
 
-.footer-dist .footer-links{
-	color: #900C3F;
-	margin: 8px 0 8px;
-	padding: 0;
+.footer-dist .footer-links {
+  color: #900c3f;
+  margin: 8px 0 8px;
+  padding: 0;
 }
 
-.footer-dist .footer-links a{
-	display:inline-block;
-	line-height: 1.2;
-	text-decoration: none;
-  color:  inherit;
+.footer-dist .footer-links a {
+  display: inline-block;
+  line-height: 1.2;
+  text-decoration: none;
+  color: inherit;
   margin-bottom: 1%;
   font: normal 16px;
 }
+
 
 .footer-dist .footer-company-name{
 	color: black;
@@ -163,11 +159,11 @@ footer {
   display: flex;
   margin-left: 3%;
 }
- 
-.footer-dist .footer-center{
-	width: 35%;
+
+.footer-dist .footer-center {
+  width: 35%;
 }
- 
+
 
 .footer-dist .footer-left i{
 	background-color: #fc9d9d;
@@ -197,40 +193,70 @@ footer {
 
 .footer-dist .footer-left p span{
 	display:block;
+  
+.footer-dist .footer-center i {
+  background-color: #ffcac2;
+  color: #ffffff;
+  font-size: 16px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  margin: 5px 10px;
+  vertical-align: middle;
+}
+
+.footer-dist .footer-center p {
+  display: inline-block;
+  color: #900c3f;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-dist .footer-center p span {
+  display: block;
   font-weight: normal;
   color: black;
-	font-size:10px;
-	line-height:2;
+  font-size: 10px;
+  line-height: 2;
 }
+
 
 
 .footer-dist .footer-left p a{
 	color: #900C3F;
-	text-decoration: none;;
+	text-decoration: none;
+  }
+
+.footer-dist .footer-center p a {
+  color: #900c3f;
+  text-decoration: none;
+
 }
 
-.footer-dist .footer-right{
-	width: 20%;
+.footer-dist .footer-right {
+  width: 20%;
 }
 
-.footer-dist .footer-company-about{
-	line-height: 20px;
-	color:  #900c3f;
-	font-size: 12px;
-	font-weight: normal;
-	margin: 0;
+.footer-dist .footer-company-about {
+  line-height: 20px;
+  color: #900c3f;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0;
 }
 
-.footer-dist .footer-company-about span{
-	display: block;
-	color: black;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
+.footer-dist .footer-company-about span {
+  display: block;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.footer-dist .footer-icons{
-	margin-top: 5px;
+.footer-dist .footer-icons {
+  margin-top: 5px;
 }
 
 .footer-dist .footer-icons a{
@@ -248,11 +274,13 @@ footer {
  
 	margin-right: 3px;
 	margin-bottom: 5px;
+  
 }
 
-.footer-dist{
+.footer-dist {
   font: normal 12px sans-serif;
 }
+
 
 .footer-center .socialMedias{
   float:left;
@@ -273,4 +301,8 @@ z-index: 1;
 transform: scale(1.35);
 box-shadow: 0 25px 40px rgba(grey);
 
+}
+
+#contactContainer {
+  display: hide;
 }
