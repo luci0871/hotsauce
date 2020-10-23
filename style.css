@@ -240,3 +240,38 @@ footer {
 #contactContainer {
   display: hide;
 }
+
+/* Vase style  */
+article {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px white solid;
+  border-radius: 10px;
+  /*	background-color: white;*/
+  font-size: 14px;
+  color: darkgreen;
+  margin: 1rem;
+  flex-direction: column;
+}
+article img.vaseImage {
+  max-width: 100%;
+}
+
+.vase-content {
+  display: grid;
+}
+
+.vase-desc {
+  display: grid;
+  border: 1px solid black;
+  width: 50%;
+}
+#container {
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+  column-gap: 2rem;
+}
+figure {
+  border: 1px solid black;
+  width: 50%;
+}
