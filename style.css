@@ -3,27 +3,6 @@
   padding: 0;
   margin: 0;
 }
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 150px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 18px;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 :root {
@@ -31,12 +10,19 @@
 }
 
 .logo {
+  /* margin-left: auto;
+  margin-right: auto; */
   width: 10rem;
   margin-top: 12%;
   margin-left: 8%;
 }
 
 .logobanner {
+  /* margin: auto;
+  padding: 0;
+  height: 500px;
+  width: 500px;
+  align-items: center; */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -62,6 +48,16 @@ li a {
   font-size: 24px;
   color: black;
 }
+
+/* .metteM {
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  margin: 0;
+  font-family: 'Baskerville', serif;
+  line-height: 1em;
+  z-index: 1000;
+} */
 
 .banner {
   display: table-cell;
@@ -92,6 +88,18 @@ header {
   font-family: Indie Flower;
 }
 
+/*.footer {
+  position: fixed;
+  left: 0;
+  bottom 0;
+  width 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-top: 12%;
+}*/
+
+/* footer style starts from here */
 footer {
   position: fixed;
   bottom: 0;
@@ -172,6 +180,12 @@ footer {
   vertical-align: middle;
 }
 
+/*.footer-dist .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+*/
+
 .footer-dist .footer-center p {
   display: inline-block;
   color: #900c3f;
@@ -235,8 +249,4 @@ footer {
 
 .footer-dist {
   font: normal 12px sans-serif;
-}
-
-#contactContainer {
-  display: hide;
 }
