@@ -95,10 +95,11 @@ header {
 footer {
   position: fixed;
   bottom: 0;
+  display: flex;
 }
 
 .footer-dist {
-  background-color: white;
+  background-color: #ccafaf;;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -148,17 +149,51 @@ footer {
   font: normal 16px;
 }
 
-.footer-dist .footer-company-name {
-  color: #ffcac2;
-  font-size: 10px;
+
+.footer-dist .footer-company-name{
+	color: black;
+	font-size: 11px;
   font-weight: normal;
   margin: 0;
+  margin-top: 32%;
+  display: flex;
+  margin-left: 3%;
 }
 
 .footer-dist .footer-center {
   width: 35%;
 }
 
+
+.footer-dist .footer-left i{
+	background-color: #fc9d9d;
+	color: #ffffff;
+  font-size: 16px;
+	width: 30px;
+	height: 30px;
+	border-radius: 10%;
+	text-align: center;
+	line-height: 20px;
+	margin: 5px 10px;
+  vertical-align: middle;
+}
+
+/*.footer-dist .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+*/
+
+.footer-dist .footer-left p{
+	display: inline-block;
+	color: #900C3F;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-dist .footer-left p span{
+	display:block;
+  
 .footer-dist .footer-center i {
   background-color: #ffcac2;
   color: #ffffff;
@@ -187,9 +222,17 @@ footer {
   line-height: 2;
 }
 
+
+
+.footer-dist .footer-left p a{
+	color: #900C3F;
+	text-decoration: none;
+  }
+
 .footer-dist .footer-center p a {
   color: #900c3f;
   text-decoration: none;
+
 }
 
 .footer-dist .footer-right {
@@ -216,25 +259,48 @@ footer {
   margin-top: 5px;
 }
 
-.footer-dist .footer-icons a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color: #ffcac2;
-  border-radius: 2px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
+.footer-dist .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #fc9d9d;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+  
 }
 
 .footer-dist {
   font: normal 12px sans-serif;
+}
+
+
+.footer-center .socialMedias{
+  float:left;
+  margin-top: 2%;
+  }
+  
+.footer-center .facebook{
+  width: 25%;;
+  height: 25%;
+  border-radius: 50%;
+  margin-top: 5%;
+  margin-left: 3%;
+  
+  }
+
+.footer-center .facebook:hover{
+z-index: 1;
+transform: scale(1.35);
+box-shadow: 0 25px 40px rgba(grey);
+
 }
 
 #contactContainer {
