@@ -12,21 +12,43 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="img/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
     <title>Mette-Marie</title>
 </head>
 
 <body>
     <main>
-      <section class="content">
+<!--       <section class="content">
           <div class="content-item"> 
               <h1 class="title"></h1>
               <figureb class="content-pic"><img src="" alt="">
             </figure>
           </div>
-      </section>
+      </section> -->
+      <section class="vases"></section>
+
+      
+	<template class="myTemplate">
+		<article>
+            <h1 class="title"></h1>
+            <img class="vaseImage" alt="pic of the vase">
+            <h1><span class="title"></span></h1>
+            <h1> <span class="vase-size"></span> </h1>
+
+
+			<!-- <h1>Price: <span class="price"></span> </h1> -->
+			<p class="desc"></p>
+			<!-- <a href="#" target="_blank"><button class="buyNow">
+					Buy Now
+				</button></a> -->
+
+		</article>
+	</template>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     </main>
 <script src="jscript.js"></script>
+<script src="scroll.js"></script>
 </body>
 
 </html>
