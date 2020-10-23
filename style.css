@@ -3,3 +3,82 @@
   padding: 0;
   margin: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root{
+--nav-fonts:Indie Flower;
+}
+
+.logo {
+  width: 10rem;
+  margin-top: 12%;
+  margin-left: 8%;
+
+}
+
+.logobanner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;  
+  margin-top: 8%;
+}
+
+ul li {
+  color: black;
+  font-family: 'Baskerville', serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  font-size: 14px;
+  display: inline;
+  float: right;
+  margin-right: 2rem;
+}
+
+li a{
+  text-decoration: none;
+  font-family:  Indie Flower;
+  font-size: 24px;
+ color: black;
+}
+
+/* .metteM {
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  margin: 0;
+  font-family: 'Baskerville', serif;
+  line-height: 1em;
+  z-index: 1000;
+} */
+
+.banner {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  text-align: center;
+}
+
+div{
+  display: flex;
+}
+.homemenu{
+  display: flex;
+  margin-top: auto;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.scrollsign {
+  transform: rotate(270deg);
+  transform-origin: top left;
+  position: absolute;
+  top: 50%;
+  margin: 40px;
+  color: black;
+  font-family:Indie Flower ;
+}
