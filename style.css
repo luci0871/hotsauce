@@ -97,10 +97,11 @@ header{
 footer {
   position: fixed;
   bottom: 0;
+  display: flex;
 }
 
 .footer-dist {
-  background-color: white;
+  background-color: #ccafaf;;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -108,6 +109,8 @@ footer {
   font: bold 16ps sans-serif;
   padding: 55px 50 px;
   margin-top: 80px;
+  display: flex;
+
 
 }
 
@@ -152,10 +155,13 @@ footer {
 }
 
 .footer-dist .footer-company-name{
-	color: #ffcac2;
-	font-size: 10px;
+	color: black;
+	font-size: 11px;
   font-weight: normal;
-	margin: 0;
+  margin: 0;
+  margin-top: 32%;
+  display: flex;
+  margin-left: 3%;
 }
  
 .footer-dist .footer-center{
@@ -163,13 +169,13 @@ footer {
 }
  
 
-.footer-dist .footer-center i{
-	background-color: #ffcac2;
+.footer-dist .footer-left i{
+	background-color: #fc9d9d;
 	color: #ffffff;
   font-size: 16px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	border-radius: 10%;
 	text-align: center;
 	line-height: 20px;
 	margin: 5px 10px;
@@ -182,14 +188,14 @@ footer {
 }
 */
 
-.footer-dist .footer-center p{
+.footer-dist .footer-left p{
 	display: inline-block;
 	color: #900C3F;
 	vertical-align: middle;
 	margin:0;
 }
 
-.footer-dist .footer-center p span{
+.footer-dist .footer-left p span{
 	display:block;
   font-weight: normal;
   color: black;
@@ -198,7 +204,7 @@ footer {
 }
 
 
-.footer-dist .footer-center p a{
+.footer-dist .footer-left p a{
 	color: #900C3F;
 	text-decoration: none;;
 }
@@ -232,7 +238,7 @@ footer {
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #ffcac2;
+	background-color:  #fc9d9d;
 	border-radius: 2px;
  
 	font-size: 20px;
@@ -246,4 +252,25 @@ footer {
 
 .footer-dist{
   font: normal 12px sans-serif;
+}
+
+.footer-center .socialMedias{
+  float:left;
+  margin-top: 2%;
+  }
+  
+.footer-center .facebook{
+  width: 25%;;
+  height: 25%;
+  border-radius: 50%;
+  margin-top: 5%;
+  margin-left: 3%;
+  
+  }
+
+.footer-center .facebook:hover{
+z-index: 1;
+transform: scale(1.35);
+box-shadow: 0 25px 40px rgba(grey);
+
 }
