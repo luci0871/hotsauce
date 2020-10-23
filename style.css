@@ -18,10 +18,10 @@
 
 .logobanner {
   display: block;
-  margin-left: auto;
+  margin-left: 24%;
   margin-right: auto;
-  width: 50%;  
-  margin-top: 8%;
+  width: 50%; 
+ margin-top: 8%;
 }
 
 ul li {
@@ -40,7 +40,13 @@ li a{
   text-decoration: none;
   font-family:  Indie Flower;
   font-size: 24px;
- color: black;
+  color: black;
+  float: right;
+
+}
+#homemenu{
+  display: flex;
+  margin-top: auto;
 }
 
 /* .metteM {
@@ -54,24 +60,18 @@ li a{
 } */
 
 .banner {
-  display: table-cell;
-  vertical-align: middle;
+ /*  display: table-cell;
+  vertical-align: middle; */
   margin: 0;
+    
   text-align: center;
+
 }
 
 div{
   display: flex;
 }
-.homemenu{
-  display: flex;
-  margin-top: auto;
-}
-header{
-  display: flex;
-  justify-content: space-between;
 
-}
 
 .scrollsign {
   transform: rotate(270deg);
