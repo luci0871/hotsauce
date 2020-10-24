@@ -241,7 +241,7 @@ footer {
   display: hide;
 }
 
-/* Vase style  */
+/* Vase Gallery Style  */
 article {
   display: flex;
   justify-content: flex-end;
@@ -254,7 +254,7 @@ article {
   flex-direction: column;
 }
 article img.vaseImage {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .vase-content {
@@ -263,15 +263,20 @@ article img.vaseImage {
 
 .vase-desc {
   display: grid;
-  border: 1px solid black;
-  width: 50%;
+  width: 20%;
 }
-#container {
+article {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+main > section {
   display: grid;
-  grid-template-rows: 1fr, 1fr;
-  column-gap: 2rem;
-}
-figure {
-  border: 1px solid black;
-  width: 50%;
+  grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
+  max-width: 1300px;
+  grid-template-rows: 1fr;
+  margin: 0 auto;
 }
