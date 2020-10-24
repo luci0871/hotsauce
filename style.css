@@ -348,6 +348,55 @@ footer {
   font: normal 12px sans-serif;
 }
 
+
+#contactContainer {
+  display: hide;
+}
+
+/* Vase Gallery Style  */
+article {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px white solid;
+  border-radius: 10px;
+  /*	background-color: white;*/
+  font-size: 14px;
+  color: darkgreen;
+  margin: 1rem;
+  flex-direction: column;
+}
+article img.vaseImage {
+  max-width: 80%;
+  padding: 2em;
+  border-radius: 100%;
+}
+
+.vase-content {
+  display: grid;
+  width: 720px;
+}
+
+.vase-desc {
+  display: grid;
+  width: 20%;
+}
+article {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  line-height: 2em;
+  row-gap: 10px;
+}
+
+main > section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 .footer-center .socialMedias{
   float:left;
   margin-top: 2%;
@@ -368,3 +417,4 @@ transform: scale(1.35);
 box-shadow: 0 25px 40px rgba(grey);
 
 }
+
