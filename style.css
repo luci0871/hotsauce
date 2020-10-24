@@ -254,11 +254,14 @@ article {
   flex-direction: column;
 }
 article img.vaseImage {
-  max-width: 50%;
+  max-width: 80%;
+  padding: 2em;
+  border-radius: 100%;
 }
 
 .vase-content {
   display: grid;
+  width: 720px;
 }
 
 .vase-desc {
@@ -269,14 +272,17 @@ article {
   display: flex;
   justify-content: center;
   align-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
+  line-height: 2em;
+  row-gap: 10px;
 }
 
 main > section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
   max-width: 1300px;
-  grid-template-rows: 1fr;
+  /*   grid-template-rows: 1fr;
+ */
   margin: 0 auto;
 }
