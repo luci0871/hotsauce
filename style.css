@@ -94,13 +94,110 @@ header {
   font-family: Indie Flower;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root{
+--nav-fonts:Indie Flower;
+}
+
+.logo {
+  width: 10rem;
+  margin-top: 12%;
+  margin-left: 8%;
+
+}
+
+.logobanner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;  
+  margin-top: 8%;
+}
+
+ul li {
+  color: black;
+  font-family: 'Baskerville', serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  font-size: 14px;
+  display: inline;
+  float: right;
+  margin-right: 2rem;
+}
+
+li a{
+  text-decoration: none;
+  font-family:  Indie Flower;
+  font-size: 24px;
+ color: black;
+}
+
+/* .metteM {
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  margin: 0;
+  font-family: 'Baskerville', serif;
+  line-height: 1em;
+  z-index: 1000;
+} */
+
+.banner {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  text-align: center;
+}
+
+div{
+  display: flex;
+}
+.homemenu{
+  display: flex;
+  margin-top: auto;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.scrollsign {
+  transform: rotate(270deg);
+  transform-origin: top left;
+  position: absolute;
+  top: 50%;
+  margin: 40px;
+  color: black;
+  font-family:Indie Flower ;
+}
+
+/*.footer {
+  position: fixed;
+  left: 0;
+  bottom 0;
+  width 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-top: 12%;
+}*/
+
 footer {
   position: fixed;
   bottom: 0;
+  display: flex;
 }
 
 .footer-dist {
-  background-color: white;
+  background-color: #ccafaf;;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -108,6 +205,9 @@ footer {
   font: bold 16ps sans-serif;
   padding: 55px 50 px;
   margin-top: 80px;
+  display: flex;
+
+
 }
 
 .footer-dist .footer-left,
@@ -117,17 +217,17 @@ footer {
   vertical-align: top;
 }
 
-.footer-left {
+.footer-left{
   margin-left: 3%;
 }
 
-.footer-dist .footer-left {
+.footer-dist .footer-left{
   width: 40%;
 }
 
-.footer-dist h3 {
+.footer-dist h3{
   color: black;
-  font: normal 22px "Indie Flower";
+  font: normal 22px 'Indie Flower';
   margin-top: 0;
 }
 
@@ -135,110 +235,188 @@ footer {
   color: black;
 }
 
-.footer-dist .footer-links {
-  color: #900c3f;
-  margin: 8px 0 8px;
-  padding: 0;
+.footer-dist .footer-links{
+	color: #900C3F;
+	margin: 8px 0 8px;
+	padding: 0;
 }
 
-.footer-dist .footer-links a {
-  display: inline-block;
-  line-height: 1.2;
-  text-decoration: none;
-  color: inherit;
+.footer-dist .footer-links a{
+	display:inline-block;
+	line-height: 1.2;
+	text-decoration: none;
+  color:  inherit;
   margin-bottom: 1%;
   font: normal 16px;
 }
 
-.footer-dist .footer-company-name {
-  color: #ffcac2;
-  font-size: 10px;
+.footer-dist .footer-company-name{
+	color: black;
+	font-size: 11px;
   font-weight: normal;
   margin: 0;
+  margin-top: 32%;
+  display: flex;
+  margin-left: 3%;
 }
-
-.footer-dist .footer-center {
-  width: 35%;
+ 
+.footer-dist .footer-center{
+	width: 35%;
 }
+ 
 
-.footer-dist .footer-center i {
-  background-color: #ffcac2;
-  color: #ffffff;
+.footer-dist .footer-left i{
+	background-color: #fc9d9d;
+	color: #ffffff;
   font-size: 16px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 20px;
-  margin: 5px 10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 10%;
+	text-align: center;
+	line-height: 20px;
+	margin: 5px 10px;
   vertical-align: middle;
 }
 
-.footer-dist .footer-center p {
-  display: inline-block;
-  color: #900c3f;
-  vertical-align: middle;
-  margin: 0;
+/*.footer-dist .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+*/
+
+.footer-dist .footer-left p{
+	display: inline-block;
+	color: #900C3F;
+	vertical-align: middle;
+	margin:0;
 }
 
-.footer-dist .footer-center p span {
-  display: block;
+.footer-dist .footer-left p span{
+	display:block;
   font-weight: normal;
   color: black;
-  font-size: 10px;
-  line-height: 2;
+	font-size:10px;
+	line-height:2;
 }
 
-.footer-dist .footer-center p a {
-  color: #900c3f;
-  text-decoration: none;
+
+.footer-dist .footer-left p a{
+	color: #900C3F;
+	text-decoration: none;;
 }
 
-.footer-dist .footer-right {
-  width: 20%;
+.footer-dist .footer-right{
+	width: 20%;
 }
 
-.footer-dist .footer-company-about {
-  line-height: 20px;
-  color: #900c3f;
-  font-size: 12px;
-  font-weight: normal;
-  margin: 0;
+.footer-dist .footer-company-about{
+	line-height: 20px;
+	color:  #900c3f;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0;
 }
 
-.footer-dist .footer-company-about span {
-  display: block;
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.footer-dist .footer-company-about span{
+	display: block;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
 
-.footer-dist .footer-icons {
-  margin-top: 5px;
+.footer-dist .footer-icons{
+	margin-top: 5px;
 }
 
-.footer-dist .footer-icons a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color: #ffcac2;
-  border-radius: 2px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
+.footer-dist .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #fc9d9d;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
 }
 
-.footer-dist {
+.footer-dist{
   font: normal 12px sans-serif;
 }
+
 
 #contactContainer {
   display: hide;
 }
+
+/* Vase Gallery Style  */
+article {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px white solid;
+  border-radius: 10px;
+  /*	background-color: white;*/
+  font-size: 14px;
+  color: darkgreen;
+  margin: 1rem;
+  flex-direction: column;
+}
+article img.vaseImage {
+  max-width: 80%;
+  padding: 2em;
+  border-radius: 100%;
+}
+
+.vase-content {
+  display: grid;
+  width: 720px;
+}
+
+.vase-desc {
+  display: grid;
+  width: 20%;
+}
+article {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  line-height: 2em;
+  row-gap: 10px;
+}
+
+main > section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.footer-center .socialMedias{
+  float:left;
+  margin-top: 2%;
+  }
+  
+.footer-center .facebook{
+  width: 25%;;
+  height: 25%;
+  border-radius: 50%;
+  margin-top: 5%;
+  margin-left: 3%;
+  
+  }
+
+.footer-center .facebook:hover{
+z-index: 1;
+transform: scale(1.35);
+box-shadow: 0 25px 40px rgba(grey);
+
+}
+

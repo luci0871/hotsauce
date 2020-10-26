@@ -24,7 +24,7 @@ const imgPath = vase._embedded["wp:featuredmedia"][0].media_details.sizes.full.s
     const template = document.querySelector(".myTemplate").content;
     const vaseCopy = template.cloneNode(true);
 
-    // 3. cloning the data 
+    // 3. cloning the data from json file
     vaseCopy.querySelector(".artist").innerHTML = vase.artist
     vaseCopy.querySelector(".vaseName").innerHTML = vase.vase_name
     vaseCopy.querySelector(".vaseMaterial").innerHTML = vase.material
