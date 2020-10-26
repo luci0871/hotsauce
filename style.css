@@ -38,7 +38,7 @@
 
 .logobanner {
   display: block;
-  margin-left: auto;
+  margin-left: 24%;
   margin-right: auto;
   width: 50%;
   margin-top: 8%;
@@ -64,10 +64,12 @@ li a {
 }
 
 .banner {
-  display: table-cell;
-  vertical-align: middle;
+ /*  display: table-cell;
+  vertical-align: middle; */
   margin: 0;
+    
   text-align: center;
+
 }
 
 div {
