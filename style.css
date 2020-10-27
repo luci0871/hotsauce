@@ -139,15 +139,55 @@ li a{
  color: black;
 }
 
-/* .metteM {
-  text-align: center;
-  color: white;
-  font-size: 80px;
-  margin: 0;
-  font-family: 'Baskerville', serif;
-  line-height: 1em;
-  z-index: 1000;
-} */
+/* About page */
+#aboutContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
+  max-width: 1300px;
+  margin: 0 auto;  
+  margin-top: 200px;
+}
+
+.info1, .info2{
+  display: grid;
+}
+
+.info1{
+  margin: 0 auto;
+  display: block;
+/*   padding: -1px 100px;
+ */  margin-right: 5%;
+  text-align: start;
+}
+
+.info2 {
+max-width: 100%;
+margin: 0 auto;
+}
+
+.aboutPic{
+  height: 550px;
+  margin-right: 2em;
+}
+
+.aboutText{
+  font: 1em sans-serif;
+  font-family: 'Grandstander', cursive;
+}
+
+.pottery{
+  font-size: 40px;
+  font-family: 'Grandstander', cursive;
+}
+
+.myself{
+  font-size: 25px;
+  font-family: 'Grandstander', cursive;
+  font-weight: 200;
+}
+
+
+
 
 .banner {
   display: table-cell;
