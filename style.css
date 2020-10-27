@@ -24,7 +24,7 @@
   width: 500px;
   align-items: center; */
   display: block;
-  margin-left: auto;
+  margin-left: 24%;
   margin-right: auto;
   width: 50%;
   margin-top: 8%;
@@ -60,10 +60,12 @@ li a {
 } */
 
 .banner {
-  display: table-cell;
-  vertical-align: middle;
+ /*  display: table-cell;
+  vertical-align: middle; */
   margin: 0;
+    
   text-align: center;
+
 }
 
 div {
@@ -150,15 +152,56 @@ li a {
   color: black;
 }
 
-/* .metteM {
-  text-align: center;
-  color: white;
-  font-size: 80px;
-  margin: 0;
-  font-family: 'Baskerville', serif;
-  line-height: 1em;
-  z-index: 1000;
-} */
+/* About page */
+#aboutContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
+  max-width: 1300px;
+  margin: 0 auto;  
+  margin-top: 200px;
+}
+
+.info1, .info2{
+  display: grid;
+}
+
+.info1{
+  margin: 0 auto;
+  display: block;
+/*   padding: -1px 100px;
+ */  margin-right: 5%;
+  text-align: start;
+}
+
+.info2 {
+max-width: 100%;
+margin: 0 auto;
+}
+
+.aboutPic{
+  height: 450px;
+  margin-right: 2em;
+}
+
+.aboutText{
+  font: 1em sans-serif;
+  font-family: 'Grandstander', cursive;
+}
+
+.pottery{
+  font-size: 40px;
+  font-family: 'Grandstander', cursive;
+}
+
+.myself{
+  font-size: 25px;
+  font-family: 'Grandstander', cursive;
+  font-weight: 200;
+}
+
+
+
+master
 
 .banner {
   display: table-cell;
