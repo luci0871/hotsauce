@@ -37,14 +37,13 @@
 }
 
 .logobanner {
-  display: block;
-  margin-left: 24%;
-  margin-right: auto;
-  width: 50%;
+  margin-left: 35%;
+  margin-right: 0;
   margin-top: 8%;
+  width: 85%;
 }
 
-ul li {
+/* ul li {
   color: black;
   font-family: "Baskerville", serif;
   text-decoration: none;
@@ -62,7 +61,7 @@ li a {
   font-size: 24px;
   color: black;
 }
-
+ */
 .banner {
  /*  display: table-cell;
   vertical-align: middle; */
@@ -74,15 +73,15 @@ li a {
 
 div {
   display: flex;
-}
-.homemenu {
+} 
+/* .homemenu {
   display: flex;
   margin-top: auto;
-}
+} */
 header {
-  display: flex;
+  display: ;
   justify-content: space-between;
-}
+} 
 
 .scrollsign {
   transform: rotate(270deg);
@@ -105,7 +104,7 @@ header {
 --nav-fonts:Indie Flower;
 }
 
-.logo {
+/* .logo {
   width: 10rem;
   margin-top: 12%;
   margin-left: 8%;
@@ -119,7 +118,7 @@ header {
   width: 50%;  
   margin-top: 8%;
 }
-
+ */
 ul li {
   color: black;
   font-family: 'Baskerville', serif;
@@ -139,7 +138,68 @@ li a{
  color: black;
 }
 
+a.active,a:hover{
+  background: red;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-widht: 952px){
+  ul li a{
+    font: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #900C3F;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    display: block;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    display: block;
+  }
+  a:hover, a.active{
+    background:none;
+    color: darkblue;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  a{
+    display: block;
+  }
+}
+
 /* About page */
+
 #aboutContainer{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
@@ -186,28 +246,25 @@ margin: 0 auto;
   font-weight: 200;
 }
 
+/* @media screen and (max-width: 850px){
+
+  #aboutContainer {
+    margin: 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 85%);
+    display: block;
+}
+}
+ */
 
 
 
-.banner {
+/* .banner {
   display: table-cell;
   vertical-align: middle;
   margin: 0;
   text-align: center;
-}
-
-div{
-  display: flex;
-}
-.homemenu{
-  display: flex;
-  margin-top: auto;
-}
-header{
-  display: flex;
-  justify-content: space-between;
-
-}
+} */
 
 .scrollsign {
   transform: rotate(270deg);
