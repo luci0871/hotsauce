@@ -18,10 +18,10 @@
 }
 
 .logobanner {
-  margin-left: 35%;
+  margin-left: 30%;
   margin-right: 0;
-  margin-top: 8%;
-  width: 85%;
+  margin-top: 20%;
+  width: 100%;
 }
 
 /* ul li {
@@ -137,7 +137,7 @@ li a {
 
 a.active,
 a:hover {
-  background: red;
+  background: rgb(230, 216, 218);
   transition: 0.5s;
 }
 
@@ -168,7 +168,7 @@ a:hover {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #900c3f;
+    background: #f5d7e2;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -204,6 +204,7 @@ a:hover {
   max-width: 1300px;
   margin: 0 auto;
   margin-top: 200px;
+  margin-bottom: 180px;
 }
 
 .info1,
@@ -238,12 +239,14 @@ a:hover {
 .pottery {
   font-size: 40px;
   font-family: "Grandstander", cursive;
+  color: rgb(236, 160, 171);
 }
 
 .myself {
   font-size: 25px;
   font-family: "Grandstander", cursive;
   font-weight: 200;
+  color: #900c3f;
 }
 
 .scrollsign {
